@@ -14,6 +14,7 @@ function KenyanFeed() {
       <div className="grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 p-2 mt-5">
         {KenyanDestinations.slice(0, 1).map((kenyan) => (
           <Kenyan
+            key={kenyan.title}
             img={kenyan.img}
             category={kenyan.category}
             title={kenyan.title}
@@ -22,6 +23,7 @@ function KenyanFeed() {
         <div className="md:col-span-2">
           {KenyanDestinations.slice(1, 2).map((kenyan) => (
             <Kenyan
+              key={kenyan.title}
               img={kenyan.img}
               category={kenyan.category}
               title={kenyan.title}
@@ -30,6 +32,7 @@ function KenyanFeed() {
         </div>
         {KenyanDestinations.slice(2, 3).map((kenyan) => (
           <Kenyan
+            key={kenyan.title}
             img={kenyan.img}
             category={kenyan.category}
             title={kenyan.title}
@@ -38,6 +41,7 @@ function KenyanFeed() {
         <div className="md:col-span-2">
           {KenyanDestinations.slice(3, 4).map((kenyan) => (
             <Kenyan
+              key={kenyan.title}
               img={kenyan.img}
               category={kenyan.category}
               title={kenyan.title}
@@ -47,6 +51,7 @@ function KenyanFeed() {
         <div className="md:col-span-2">
           {KenyanDestinations.slice(4, 5).map((kenyan) => (
             <Kenyan
+              key={kenyan.title}
               img={kenyan.img}
               category={kenyan.category}
               title={kenyan.title}
