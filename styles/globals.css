@@ -18,5 +18,13 @@ a {
 }
 
 .bannerText {
-  font-family: "Parisienne", cursive;
+  font-family: "Parisienne", sans-serif;
+}
+
+.subHeading {
+  font-family: "Italianno", sans-serif;
+}
+
+.category {
+  font-family: "Great Vibes", sans-serif;
 }
