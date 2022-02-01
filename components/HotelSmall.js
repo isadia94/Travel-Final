@@ -4,7 +4,7 @@ import { LocationMarkerIcon } from "@heroicons/react/solid";
 
 function HotelSmall({ img, title }) {
   return (
-    <div className=" relative shadow-lg cursor-pointer hover:scale-105 transition-transform:ease-in-out mb-2 pb-2">
+    <div className=" relative shadow-lg cursor-pointer hover:scale-110 hover:z-30 transition-transform:ease-in-out mb-2 pb-2">
       <div className="relative h-[270px] ">
         <Image src="/ole-sereni.jpg" layout="fill" objectFit="cover" />
       </div>
