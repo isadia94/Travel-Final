@@ -13,15 +13,18 @@ function HotelFeed() {
       <h2 className="mt-2 text-center font-extrabold text-2xl md:text-4xl md:font-medium text-gray-600 ">
         Get Amazing Deals with Bonfire
       </h2>
-      <div className="mt-10 gap-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
+
+      {/* Different Screen sizes differnt grids */}
+      <div className="mt-10 gap-2 grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mx-auto">
         <HotelSmall />
         <HotelSmall />
-        <div className="col-span-2">
+        <div className="lg:col-span-2">
           <HotelSmall />
         </div>
-
-        <HotelSmall />
-        <div className="col-span-3">
+        <div className="lg:col-span-2">
+          <HotelSmall />
+        </div>
+        <div className="lg:col-span-2">
           <HotelSmall />
         </div>
       </div>

@@ -4,7 +4,7 @@ import { KenyanDestinations } from "../Data/KenyanData";
 
 function KenyanFeed() {
   return (
-    <div className="mt-10 md:mt-20 text-center bg-white mb-4">
+    <div className="mt-10 md:mt-20 text-center bg-white mb-4 relative">
       <h4 className="subHeading text-4xl text-green-900 md:text-7xl">
         Kenyan Destinations
       </h4>
@@ -20,7 +20,7 @@ function KenyanFeed() {
             title={kenyan.title}
           />
         ))}
-        <div className="md:col-span-2">
+        <div className="lg:col-span-2">
           {KenyanDestinations.slice(1, 2).map((kenyan) => (
             <Kenyan
               key={kenyan.title}
@@ -38,7 +38,7 @@ function KenyanFeed() {
             title={kenyan.title}
           />
         ))}
-        <div className="md:col-span-2">
+        <div className="">
           {KenyanDestinations.slice(3, 4).map((kenyan) => (
             <Kenyan
               key={kenyan.title}
@@ -48,7 +48,7 @@ function KenyanFeed() {
             />
           ))}
         </div>
-        <div className="md:col-span-2">
+        <div className="">
           {KenyanDestinations.slice(4, 5).map((kenyan) => (
             <Kenyan
               key={kenyan.title}
