@@ -16,9 +16,7 @@ function Kenyan({ img, title, category }) {
       <h2 className=" absolute bottom-10 pl-5 text-3xl font-bold text-white">
         {title}
       </h2>
-      <p className="absolute top-4 bg-yellow-500 py-2 px-4 rounded-md right-3 ">
-        0 tours
-      </p>
+
       <p className="absolute bottom-20 pl-5 category text-2xl text-yellow-200">
         {category}
       </p>
