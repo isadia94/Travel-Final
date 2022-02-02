@@ -35,13 +35,8 @@ function Slider() {
         className="mySwiper"
       >
         {popular.map(({ title, img, price }) => (
-          <div className="relative cursor-pointer">
-            <SwiperSlide
-              key={title}
-              img={img}
-              price={price}
-              className="cursor-pointer"
-            >
+          <div className="relative cursor-pointer" key={title}>
+            <SwiperSlide img={img} price={price} className="cursor-pointer">
               <img src={img} alt="" loading="lazy" />
               <h1 className=" absolute font-extrabold text-xl pl-4 bottom-10">
                 {title}
