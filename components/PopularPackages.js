@@ -2,7 +2,7 @@ import Slider from "./Slider";
 
 function PopularPackages() {
   return (
-    <div className="mt-20">
+    <div className="mt-20 relative">
       <h4 className="subHeading text-center text-4xl text-green-900 md:text-7xl">
         Popular Packages
       </h4>

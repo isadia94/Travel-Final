@@ -9,16 +9,17 @@ import Header from "../components/Header";
 import HotelFeed from "../components/HotelFeed";
 import KenyanFeed from "../components/KenyanFeed";
 import PopularPackages from "../components/PopularPackages";
+import International from "../components/International";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 8000);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 8000);
+  // }, []);
   return (
     <div>
       <Head>
@@ -93,6 +94,9 @@ export default function Home() {
           </div>
           <div className="lg:max-w-6xl mx-auto">
             <PopularPackages />
+          </div>
+          <div className="lg:max-w-6xl mx-auto">
+            <International />
           </div>
         </>
       )}
