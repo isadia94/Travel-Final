@@ -1,25 +1,25 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import { SpinnerCircular, SpinnerDotted } from "spinners-react";
-import Image from "next/image";
-import Link from "next/link";
-import { Carousel } from "react-responsive-carousel";
+
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import HotelFeed from "../components/HotelFeed";
 import KenyanFeed from "../components/KenyanFeed";
 import PopularPackages from "../components/PopularPackages";
 import International from "../components/International";
+import Themes from "../components/Themes";
+import Deals from "../components/Deals";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 8000);
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
     <div>
       <Head>
@@ -35,68 +35,24 @@ export default function Home() {
       </Head>
 
       {loading ? (
-        <div className="h-screen w-screen flex items-center justify-center">
+        <div className="h-screen w-screen flex items-center justify-center relative">
           <SpinnerDotted size={100} />
         </div>
       ) : (
         <>
           <Header />
           <Banner />
-          <div className="lg:max-w-6xl mx-auto">
+          <div className="lg:max-w-6xl mx-auto relative">
             <KenyanFeed />
-          </div>
-          <Carousel
-            autoPlay
-            infiniteLoop
-            showStatus={false}
-            showIndicators={false}
-            showThumbs={false}
-            interval={5000}
-          >
-            <div className="relative h-64">
-              <Image
-                src="/enashipai.jpg"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-              />
+            <Deals />
 
-              <h3 className="absolute top-20 md:top-30 text-white  left-10 font-bold max-w-[600px] text-left text-2xl md:text-5xl z-30">
-                Enashipai
-              </h3>
-              <p className="absolute top-32 md:top-36 text-white left-10">
-                Tours, Events & Excursions
-              </p>
-              <Link href="/">
-                <a className="absolute bottom-3 left-10 bg-white py-2 px-4 rounded-md">
-                  View Deals
-                </a>
-              </Link>
-            </div>
-            <div className="relative h-64">
-              <Image src="/baobab.jpg" layout="fill" objectFit="cover" />
-
-              <h3 className="absolute top-20 md:top-30 text-white  left-10 font-bold max-w-[600px] text-left text-2xl md:text-5xl z-30">
-                Baobab Beach Resort
-              </h3>
-              <p className="absolute top-32 md:top-36 text-white left-10">
-                Unbelievable Hotels
-              </p>
-              <Link href="/">
-                <a className="absolute bottom-3 left-10 bg-white py-2 px-4 rounded-md">
-                  View Deals
-                </a>
-              </Link>
-            </div>
-          </Carousel>
-          <div className="lg:max-w-6xl mx-auto">
             <HotelFeed />
-          </div>
-          <div className="lg:max-w-6xl mx-auto">
             <PopularPackages />
-          </div>
-          <div className="lg:max-w-6xl mx-auto">
-            <International />
+            <div className="mt-20">
+              <International />
+            </div>
+
+            <Themes />
           </div>
         </>
       )}

@@ -38,7 +38,7 @@ function Slider() {
           <div className="relative cursor-pointer" key={title}>
             <SwiperSlide img={img} price={price} className="cursor-pointer">
               <img src={img} alt="" loading="lazy" />
-              <h1 className=" absolute font-extrabold text-xl pl-4 bottom-10">
+              <h1 className="absolute font-extrabold text-xl pl-4 bottom-10">
                 {title}
               </h1>
               <p className="font-light absolute bottom-4 pl-4 text-white ">

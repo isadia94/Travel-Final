@@ -5,7 +5,7 @@ import PopularInternational from "./PopularInternational";
 
 const International = () => {
   return (
-    <div className="relative mt-56">
+    <div className="relative">
       <h4 className="subHeading text-center text-4xl text-green-900 md:text-7xl">
         International Destinations
       </h4>
@@ -13,7 +13,7 @@ const International = () => {
         Explore Amazing Destinations in the World
       </h2>
 
-      <div className="mt-12 p-2 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  h-[200px] ">
+      <div className="mt-12 p-2 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3   ">
         {international.map((item, index) => (
           <div key={index} className="">
             <PopularInternational img={item.img} title={item.title} />

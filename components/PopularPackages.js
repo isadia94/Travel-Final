@@ -10,7 +10,7 @@ function PopularPackages() {
         Trending Destinations
       </h2>
 
-      <div className="mt-10 h-40 relative">
+      <div className="mt-10  relative">
         <Slider />
       </div>
     </div>
