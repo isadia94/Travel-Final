@@ -48,7 +48,7 @@ function KenyanFeed() {
             />
           ))}
         </div>
-        <div className="lg:col-span-3">
+        <div className="md:col-span-2 lg:col-span-3">
           {KenyanDestinations.slice(4, 5).map((kenyan) => (
             <Kenyan
               key={kenyan.title}
