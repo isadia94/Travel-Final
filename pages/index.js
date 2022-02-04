@@ -10,6 +10,7 @@ import PopularPackages from "../components/PopularPackages";
 import International from "../components/International";
 import Themes from "../components/Themes";
 import Deals from "../components/Deals";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -54,6 +55,7 @@ export default function Home() {
 
             <Themes />
           </div>
+          <Footer />
         </>
       )}
     </div>
